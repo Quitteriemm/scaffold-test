@@ -31,3 +31,15 @@
     <%= f.submit %>
   </div>
 <% end %>
+<!-- other options with simple form -->
+
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :stars %>
+
+  <%= f.button :submit %>
+<% end %>
+
